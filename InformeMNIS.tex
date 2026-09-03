@@ -1,0 +1,95 @@
+\documentclass{./plantilla/umss}
+
+\usepackage[dvipsnames]{xcolor}
+\definecolor{bg}{rgb}{0.95,0.95,0.95}
+
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{minted}
+\usepackage{listings}
+\usepackage{pdfpages}
+
+\setminted{
+  fontsize=\small,
+  linenos=true,
+  breaklines=true,
+  frame=lines,
+  framesep=2mm,
+  bgcolor=gray!10
+}
+
+\title{Modelo de Negocio - Sistema Alumni}
+
+\begin{document}
+
+\sujet{Modelo de Negocio - Sistema de Gestión Alumni}
+\enseignant{Ing. Rosemary \textsc{Torrico}}
+\eleves{\begin{small}
+  \begin{itemize}
+    \item Alfredo Ronald Choquerive Toroya
+    \item Nicole Geraldine Rodas Cornejo
+    \item Valentina Mercado Apaza
+    \item Franco Prieto Ayala
+    \item Adriana Lavayen Iguay
+    \item Shamir Leonardo Terán Mustafá
+    \item Angelica Adriana Soto Jiménez
+    \item Jhosua Alejandro Bustillos Calderon
+    \item Brenda Vargas Mollo
+    \item Pablo Adrian Azurduy Rivera
+  \end{itemize}
+\end{small}}
+
+\fairemarges
+\fairepagedegarde
+
+\section{Contexto y Justificación del Proyecto}
+
+La concepción tradicional de la relación entre la universidad pública y sus graduados se ha fundamentado históricamente en un vínculo terminal: una vez otorgado el título académico, la interacción institucional cesa casi por completo, limitándose a trámites burocráticos esporádicos. En los ecosistemas contemporáneos de educación superior, este paradigma ha sido superado por un modelo de vinculación longitudinal continua, en el cual el graduado actúa como agente activo de transferencia de conocimiento, retroalimentación curricular, inserción laboral y posicionamiento institucional.
+
+En la Universidad Mayor de San Simón, la culminación del plan de estudios y la obtención del título profesional marcan con frecuencia una ruptura estructural en la relación entre la institución y sus graduados. En el modelo operativo vigente, el contacto se limita a gestiones administrativas aisladas de certificación o trámites de titulación, careciendo de mecanismos institucionalizados para el seguimiento continuo de la trayectoria laboral y académica de los profesionales formados en sus aulas.
+
+Esta desarticulación genera un vacío crítico en la recopilación de indicadores de pertinencia curricular, inserción laboral y movilidad profesional, métricas que resultan indispensables para responder a las crecientes exigencias de evaluación y acreditación universitaria en instancias como el ARCU-SUR. Asimismo, la dispersión de este capital humano priva a la comunidad universitaria de redes de apoyo profesional, bolsas de trabajo articuladas y programas de mentoría que faciliten la inserción laboral de las nuevas generaciones.
+
+Frente a este escenario de desconexión, surge la necesidad imperativa de transformar la gestión del egresado: no como un trámite de archivo, sino como una política integral de vinculación y desarrollo continuo. Es en este contexto donde un \textbf{Sistema de Gestión Alumni} (\textit{Alumni Management System}) no representa una simple base de datos de contactos, sino una infraestructura socio-tecnológica integrada que estructura, dinamiza y capitaliza el valor social e intelectual acumulado por la institución a lo largo de su trayectoria formativa.
+
+\newpage
+\section{Problemas, Causas y soluciones}
+
+A continuación, se detalla en una tabla los problemas identificados en la actualidad de los graduados y egresados, sus causas o impactor reales, y las soluciones funcionales que aborda el sistema:
+
+\begin{table}[htbp]
+  \centering
+  \small
+  \renewcommand{\arraystretch}{1.35}
+  \begin{tabular}{>{\raggedright\arraybackslash}p{0.30\textwidth} >{\raggedright\arraybackslash}p{0.32\textwidth} >{\raggedright\arraybackslash}p{0.32\textwidth}}
+    \toprule
+    \textbf{Problema} & \textbf{Causa / Impacto Real} & \textbf{Solución} \\
+    \midrule
+    Pérdida total del rastro de los profesionales tras la titulación; directorios estáticos, aislados y desactualizados. 
+    & Imposibilidad de contactar a graduados; bases de datos en hojas de cálculo que caducan en meses. 
+    & Autenticación y actualización por el propio graduado y sincronización con redes profesionales externas. \\
+    \addlinespace
+    Dificultad severa para levantar métricas de empleabilidad e impacto para el CEUB o agencias internacionales (ARCU-SUR). 
+    & Encuestas manuales con baja tasa de respuesta; riesgo en auditorías de calidad y retraso en acreditaciones. 
+    & Reportes en tiempo real de absorción laboral, salarios medios, áreas de desempeño y pertinencia curricular. \\
+    \addlinespace
+    Falta de un canal formal e institucionalizado de intermediación laboral entre la universidad y el sector productivo. 
+    & Los egresados dependen de redes informales o plataformas de terceros; las empresas no tienen un canal directo para captar talento UMSS. 
+    & Canales formales de áreas de especialidad y gestión centralizada de postulaciones y pasantías. \\
+    \addlinespace
+    Aislamiento de los estudiantes de últimos semestres frente a la realidad y exigencias de la industria. 
+    & Inseguridad vocacional, desconocimiento de dinámicas de contratación y demoras prolongadas en la inserción laboral. 
+    & Emparejamiento con egresados consolidados, definición de metas, límites de carga por mentor y métricas de avance. \\
+    \addlinespace
+    Desconexión entre la oferta de posgrado/capacitación y los intereses reales de los graduados. 
+    & Baja retención de egresados en programas de posgrado propios de la UMSS; pérdida del sentido de pertenencia institucional. 
+    & Convocatorias a eventos técnicos, reuniones de cohorte, aranceles preferenciales de posgrado y acceso permanente a repositorios/bibliotecas. \\
+    \bottomrule
+  \end{tabular}
+  \caption{Matriz de alineación problemática--solución del Sistema de Gestión Alumni.}
+  \label{tab:problemas_soluciones}
+\end{table}
+
+\end{document}
