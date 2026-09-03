@@ -48,11 +48,11 @@
 \newcommand{\fairepagedegarde}{
 \begin{titlepage}
 
-\ThisLRCornerWallPaper{1}{/home/azurduy/Universidad/Informes/plantilla/logos/background.png}
+\ThisLRCornerWallPaper{1}{plantilla/logos/background.png}
 	
     \centering % Centrar el contenido
-    \includegraphics[width=0.3\textwidth, height = 150pt]{/home/azurduy/Universidad/Informes/plantilla/logos/umss.jpg}\hfill
-	\includegraphics[width=0.3\textwidth]{/home/azurduy/Universidad/Informes/plantilla/logos/tecno.png}\par\vspace{1cm} % Inserción del logo
+    \includegraphics[width=0.3\textwidth, height = 150pt]{plantilla/logos/umss.jpg}\hfill
+	\includegraphics[width=0.3\textwidth]{plantilla/logos/tecno.png}\par\vspace{1cm} % Inserción del logo
 	{\scshape\LARGE Universidad Mayor de San Simon - Facultad de Tecnologia \par} % Nombre de la universidad
 	\vspace{1.5cm} % Espacio de 1,5 cm
 	{\scshape\Large \UE \par \sujet \par} % Subtítulo
