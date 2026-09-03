@@ -1,0 +1,179 @@
+\documentclass{./plantilla/umss}
+
+\usepackage[dvipsnames]{xcolor}
+\definecolor{bg}{rgb}{0.95,0.95,0.95}
+
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{minted}
+\usepackage{listings}
+\usepackage{pdfpages}
+
+\setminted{
+  fontsize=\small,
+  linenos=true,
+  breaklines=true,
+  frame=lines,
+  framesep=2mm,
+  bgcolor=gray!10
+}
+
+\title{Informe grupal}
+
+\begin{document}
+
+\sujet{Crisis del software - Grupo DuckCoders}
+\enseignant{Ing. Rosemary \textsc{Torrico}}
+\eleves{\begin{small}
+
+  \begin{enumerate}
+    \item Azurduy Rivera Pablo Adrian
+    \item Bustillos Calderon Jhosua Alejandro
+    \item Choquerive Toroya Alfredo Ronald
+    \item Lavayen Iguay Adriana
+    \item Mercado Apaza Valentina
+    \item Prieto Ayala Franco
+    \item Rodas Cornejo Nicole Geraldine
+    \item Soto Jiménez Angelica Adriana
+    \item Terán Mustafá Shamir Leonardo
+    \item Vargas Mollo Brenda
+  \end{enumerate}
+\end{small}}
+\fairemarges
+\fairepagedegarde
+
+\section{Causas}
+
+\subsection{El Desfase Tecnológico}
+
+El desfase tecnológico se produjo porque el salto del hardware superó la capacidad del software. El detonante técnico principal de la crisis del software radicó en un desequilibrio histórico. Mientras la capacidad física de cómputo crecía de forma exponencial, las herramientas y metodologías para escribir programas permanecieron estancadas en enfoques rudimentarios y artesanales.
+
+A finales de la década de 1960, la transición de los tubos de vacío a los transistores y circuitos integrados desató una revolución tecnológica. La llegada de familias de computadoras como la serie IBM System/360 ofreció a las organizaciones procesadores exponencialmente más rápidos, mayor capacidad de memoria RAM y costos de adquisición drásticamente menores. Por primera vez en la historia de la informática, las limitaciones de potencia física de las máquinas dejaron de ser el obstáculo principal.
+
+En contraste con la acelerada maduración de la ingeniería de hardware, la creación de código continuó operando bajo un paradigma empírico, informal y no estandarizado. Los programadores dependían fuertemente del lenguaje ensamblador o de las primeras versiones de lenguajes de alto nivel, como FORTRAN o COBOL, los cuales carecían de estructuras avanzadas de abstracción de datos.
+
+Tampoco existían conceptos consolidados como diseño modular, orientación a objetos o arquitectura en capas. El código se redactaba de forma lineal y altamente acoplada. Además, la longitud y complejidad de las instrucciones crecieron más rápido que la capacidad mental humana para rastrear el flujo lógico de un programa sin un marco metodológico que lo respaldara.
+
+\subsection{Falta de Estándares y Buenas Prácticas de Desarrollo}
+
+En los años 60 y 70 no existían estándares de desarrollo. No había reglas comunes sobre cómo escribir código, documentarlo o coordinar equipos.
+
+Por ejemplo, no había control de versiones. Múltiples programadores editaban el mismo código sin forma de rastrear cambios. Uno guardaba y otro pisaba el trabajo del otro. Era un caos total.
+
+Tampoco había convenciones de código. Cada desarrollador programaba a su manera. Cuando alguien nuevo se unía al equipo, no entendía nada de lo que estaba viendo.
+
+Sin documentación, sin revisión de código y sin procesos compartidos, cada proyecto era una isla. Nadie podía coordinar con nadie de forma efectiva.
+
+Hoy tenemos Git, linters, code review y documentación como estándar. Pero durante la crisis, la falta total de estas prácticas básicas hizo que escalar proyectos fuera prácticamente imposible.
+
+\section{Síntomas}
+
+\subsection{Costos y desborde de presupuestos}
+
+Los costos y el desborde de presupuestos se volvieron un síntoma técnico porque existía una incapacidad estructural para predecir y controlar el gasto en proyectos sumamente complejos. No se trataba simplemente de gastar más de lo previsto.
+
+Este síntoma se manifestaba de la siguiente manera.
+
+\begin{itemize}
+    \item Desproporción entre planificación y error. En la época de la crisis se destinaba un tiempo mínimo a fases críticas tales como el análisis y diseño, las cuales ocupaban apenas un 8\% del cronograma total. Precisamente en esas dos fases se originaba el 80\% de los errores. Este desajuste causaba errores que no eran evidentes hasta etapas muy avanzadas, generando un gran aumento de costes que sobrepasaba el presupuesto original.
+    \item Pérdida de recursos en mantenimiento. Más de tres cuartas partes del tiempo eran consumidas en correcciones y mantenimiento, dejando solo un cuarto para la creación real del producto. Esto generaba un síntoma de presupuesto infinito, donde las empresas seguían aportando más dinero para intentar lograr el funcionamiento mínimo de lo ya construido.
+    \item Incapacidad de frenar el gasto. Un ejemplo notable fue el caso del Bank of America en 1988, el cual ilustra la gravedad del síntoma. Tras una inversión inicial de 23 millones de dólares para el sistema MasterNet, la falta de control obligó a sumar 60 millones de dólares adicionales en un intento desesperado por rescatar el proyecto. Al final, el síntoma fue tan agudo que, tras alcanzar los 83 millones de dólares, el sistema tuvo que ser cancelado por su mal funcionamiento. Esto demostraba que el desbordamiento de presupuesto solía ir de la mano con el fracaso total del producto.
+\end{itemize}
+
+\subsection{Dificultad para mantener el software}
+
+La dificultad para mantener el software fue otro síntoma de la crisis. A medida que los programas aumentaban en tamaño y complejidad, realizar cambios se volvía cada vez más complicado.
+
+Los sistemas podían presentar una estructura difícil de comprender y una documentación insuficiente, por lo que los desarrolladores tenían dificultades para identificar qué partes del programa serían afectadas al realizar una modificación. Esto podía generar nuevos errores en otras partes del sistema y requerir numerosas pruebas.
+
+Esta situación hacía que incluso cambios pequeños pudieran convertirse en tareas complejas, especialmente en sistemas grandes que ya se encontraban en funcionamiento. En la conferencia de la OTAN de 1968 se señaló que, en grandes sistemas en línea, el costo de probar un cambio podía llegar a ser casi 100 veces mayor que el costo de producirlo.
+
+Por lo tanto, el problema no era solamente desarrollar un programa que funcionara, sino conseguir que pudiera mantenerse y evolucionar a medida que aparecieran nuevos requisitos y necesidades.
+
+\section{Consecuencias}
+
+\subsection{Consecuencias negativas}
+
+La crisis del software desplegó sus efectos en tres dimensiones interconectadas.
+
+\begin{itemize}
+    \item Fallos con impacto crítico. Cuando el software pasó a controlar equipos médicos, sistemas de defensa, transporte y finanzas, un error dejó de ser un retraso administrativo para convertirse en pérdida humana o económica irreparable. Casos como el acelerador Therac-25, que entre 1985 y 1987 irradió fatalmente a varios pacientes por un error de diseño, el fallo del sistema Patriot en Dhahran en 1991 durante la Guerra del Golfo, o la destrucción del Ariane 5 en 1996 en su lanzamiento inaugural, revelaron un problema sistemático. Los defectos se replicaban idénticamente en cada copia del programa porque eran errores de verificación y diseño, no averías físicas aisladas.
+    \item Deuda técnica heredada. Bajo presión de plazos y sin modularidad, documentación ni pruebas, se construyeron sistemas imposibles de mantener pero imposibles de apagar. El ejemplo más ilustrativo es el problema del año 2000. Los programadores de los años 60 usaban años de dos dígitos para ahorrar almacenamiento. Esa decisión razonable en su momento se convirtió en una bomba de tiempo. Remediar el problema Y2K exigió revisar sistemas críticos escritos entre 1960 y 1980, requiriendo inversiones globales de billones de dólares.
+    \item Desconfianza generalizada. La reiteración de proyectos entregados tarde, fuera de presupuesto y sin cumplir requisitos, cuantificada por el CHAOS Report en 1994, erosionó la credibilidad de la informática como disciplina profesional. Estos tres efectos se realimentaban. Cada fracaso reforzaba los otros, creando un círculo vicioso que evidenció que el problema no se resolvería con más esfuerzo, sino con un método.
+\end{itemize}
+
+\subsection{Consecuencias positivas}
+
+La crisis obligó el surgimiento de una disciplina donde antes solo existía oficio.
+
+\begin{itemize}
+    \item La ingeniería de software como respuesta formal. En la Conferencia de la OTAN de 1968 se propone el término ingeniería de software con un propósito explícito. Se buscaba aplicar el rigor sistemático de las ingenierías tradicionales a la producción de programas. Esto significaba entender la codificación como una sola fase dentro de un ciclo completo que abarca requisitos, diseño, pruebas y mantenimiento.
+    \item Métodos y control. De ese principio derivaron los modelos de ciclo de vida, como cascada, iterativo, espiral y luego métodos ágiles. Estos modelos estructuraron el desarrollo en fases, entregables y puntos de control, permitiendo estimar avance y detectar desviaciones antes del colapso. Se sumaron prácticas hoy básicas, como gestión de proyectos con estimación, métricas, control de versiones, revisiones de código y pruebas sistemáticas.
+    \item Herramientas conceptuales. La programación estructurada y la modularidad, especialmente el principio de ocultamiento de información de Parnas, atacaron directamente el origen del caos, es decir, la complejidad inmanejable. Abrieron el camino hacia la orientación a objetos y permitieron que el código se entendiera, modificara y mantuviera.
+    \item Problema transformado, no resuelto. Estas respuestas no eliminaron las dificultades inherentes al software. Brooks advirtió en 1986 que su complejidad es esencial, no accidental. Pero transformaron un problema ingobernable en uno administrable, constituyendo el fundamento de la ingeniería de software actual.
+\end{itemize}
+
+\section{Hitos}
+
+\subsection{Publicación de Structured Design}
+
+El artículo \textit{Structured Design}, publicado en 1974 por Wayne Stevens, Glenford Myers y Larry Constantine en el \textit{IBM Systems Journal}, marcó un hito fundamental en la consolidación de la ingeniería de software como disciplina formal. El texto propuso un conjunto de consideraciones y técnicas para el diseño general de programas, orientadas a facilitar la codificación, depuración y modificación del software, haciéndolas más rápidas, sencillas y económicas mediante la reducción de la complejidad. Su publicación respondió directamente a los problemas identificados durante la crisis del software de finales de los años 60, cuando los sistemas crecían en tamaño y complejidad sin que existieran principios formales que guiaran su construcción.
+
+El aporte central del artículo fue establecer la simplicidad como criterio principal para evaluar diseños alternativos. Los autores propusieron que esta se lograba dividiendo el sistema en piezas separadas que pudieran ser consideradas, implementadas, corregidas y modificadas con una afectación mínima sobre las demás partes del sistema.
+
+Para formalizar esta idea, los autores definieron el concepto de módulo como un conjunto de instrucciones de programa contiguas, con un nombre propio que permitiera su invocación desde otras partes del sistema, y preferiblemente con su propio conjunto distintivo de variables. A partir de esta base, el artículo introdujo dos conceptos centrales.
+
+El primer concepto es la cohesión, entendida como el grado en que los elementos internos de un módulo están relacionados entre sí y contribuyen a una única tarea bien definida. El segundo concepto es el acoplamiento, entendido como el grado de dependencia entre distintos módulos del sistema. Un buen diseño, según los autores, debía buscar alta cohesión dentro de cada módulo y bajo acoplamiento entre ellos. En este sentido, advirtieron sobre el riesgo del entorno común, señalando que el uso compartido de variables o recursos globales acoplaba entre sí a todos los módulos que lo utilizaban, sin importar si existía o no una relación funcional real entre ellos.
+
+Los conceptos de cohesión y acoplamiento, sistematizados en este artículo y en los trabajos relacionados de Myers en 1975 y de Yourdon y Constantine en 1978, se convirtieron en fundamento de desarrollos posteriores en la disciplina. Tom DeMarco los retomó en 1979 en su obra \textit{Structured Analysis and System Specification}, introduciendo ahí el principio de responsabilidad única que más tarde sería reinterpretado por Robert C. Martin como parte de los principios SOLID. Esta línea de influencia documentada demuestra que los principios de diseño modular planteados en los años 70 continúan vigentes, bajo distintas formulaciones, en las prácticas de diseño de software orientado a objetos que se emplean en la actualidad.
+
+\subsection{El Modelo de Madurez de Capacidades}
+
+El CMM (Capability Maturity Model), o Modelo de Madurez de Capacidades, fue una de las respuestas a los problemas de la crisis del software. Sin embargo, no apareció inmediatamente después de esta crisis, sino como resultado de más de dos décadas de evolución de la Ingeniería de Software.
+Durante la década de 1960, los proyectos de software crecieron rápidamente en tamaño y complejidad. Las técnicas existentes no eran suficientes para controlarlos, provocando retrasos, sobrecostos, errores, problemas de mantenimiento y proyectos que no cumplían sus objetivos. Este conjunto de problemas se conoció como la crisis del software.
+Un momento fundamental ocurrió en 1968, con la conferencia de la OTAN sobre Ingeniería de Software en Garmisch, Alemania, donde se discutieron estos problemas y se impulsó el concepto de “Software Engineering” o Ingeniería de Software, buscando métodos más sistemáticos para desarrollar software. En 1969 se realizó una segunda conferencia en Roma para continuar estas discusiones.
+Durante las décadas de 1970 y 1980 surgieron técnicas como la programación estructurada, Waterfall, gestión de proyectos, métricas, aseguramiento de calidad y herramientas CASE. Sin embargo, todavía faltaba una forma estructurada de determinar qué tan capaz y madura era una organización para desarrollar software de manera consistente.
+Este problema era especialmente importante para el Departamento de Defensa de Estados Unidos, que contrataba empresas para desarrollar sistemas militares complejos y costosos. Necesitaba saber qué proveedores podían desarrollar software de manera confiable y repetible, no solo si habían conseguido terminar un proyecto anteriormente.
+Por esta razón, en 1984 se creó el Software Engineering Institute (SEI) en Carnegie Mellon University, impulsado por el Departamento de Defensa. Su objetivo era mejorar las prácticas de Ingeniería de Software y ayudar a las organizaciones a evaluar y mejorar sus procesos de desarrollo.
+Uno de los personajes fundamentales fue Watts Humphrey, quien había trabajado en IBM y posteriormente se incorporó al SEI. Humphrey impulsó la idea de que mejorar el software requería mejorar también el proceso utilizado para desarrollarlo, y no depender únicamente de buenos programadores.
+A partir de este enfoque, el SEI desarrolló métodos para evaluar la capacidad de las organizaciones, entre ellos el Software Capability Evaluation (SCE). Este método permitía analizar aspectos como requisitos, planificación, seguimiento, calidad y gestión de proyectos. Su importancia estuvo en demostrar que una organización podía evaluarse según la capacidad de sus procesos, y no únicamente por el software que producía.
+A partir de estos trabajos surgió el Capability Maturity Model for Software (SW-CMM). Un equipo del SEI dirigido por Mark Paulk desarrolló el modelo, que fue publicado oficialmente en 1991.
+El CMM estableció cinco niveles de madurez:
+Inicial: los procesos son impredecibles y dependen principalmente de las personas.
+Repetible: existen prácticas básicas para gestionar los proyectos.
+Definido: la organización establece procesos estándar y documentados.
+Gestionado: se utilizan métricas y datos para controlar los procesos.
+Optimizado: se busca una mejora continua de los procesos.
+La idea principal era pasar de un desarrollo impredecible y dependiente de individuos a uno controlado, medible y mejorable.
+Por ejemplo, una empresa con baja madurez puede no documentar correctamente los requisitos, no controlar los cambios y depender del conocimiento de determinados programadores. Una organización con mayor madurez establece procesos para gestionar requisitos, planificar proyectos, controlar cambios, realizar pruebas, administrar versiones y medir resultados.
+Por lo tanto, CMM no fue una solución puntual a la crisis del software, sino una evolución de las respuestas que surgieron después de ella. Su principal aporte fue cambiar la perspectiva: la calidad del software no depende únicamente del producto final o de la capacidad individual de los programadores, sino también de la madurez de los procesos utilizados por toda la organización.
+
+\section{¿Sigue vigente?}
+
+\subsection{Dependencia de librerías de terceros}
+
+La complejidad y dependencia desmedida es la versión moderna de la crisis del software. Ya no sufrimos por no saber programar, sino por construir sistemas enteros sobre miles de capas de código ajeno que nadie audita por completo.
+
+\begin{itemize}
+    \item El árbol oculto, referido a las dependencias transitivas. Instalar 10 librerías directas suele descargar automáticamente cientos o miles de paquetes secundarios. El 90\% del código de una aplicación moderna no fue escrito por el equipo que la mantiene.
+    \item El efecto castillo de naipes. Si una sola micro-librería falla, es eliminada o cambia de forma incompatible, puede romper miles de proyectos en cadena, como ocurrió con las 11 líneas de código de left-pad en 2016.
+    \item El dilema del voluntario. Infraestructuras digitales críticas dependen de componentes open-source mantenidos por una o dos personas en su tiempo libre. Si se abandonan, quedan sin parches de seguridad ni soporte.
+    \item Ataques a la cadena de suministro. Los atacantes ya no vulneran el sistema final directamente, sino que inyectan código malicioso en librerías populares desatendidas para infectar automáticamente a todas las aplicaciones que las descarguen.
+    \item Fallos en cascada en microservicios. Al fragmentar los sistemas en decenas de APIs y servicios en la nube, un retraso o caída en un servicio externo bloquea y colapsa el resto de la plataforma en red.
+\end{itemize}
+
+El dilema actual es que reutilizar código ajeno es indispensable para avanzar rápido, pero sin auditorías ni aislamiento estricto, la estabilidad del software queda en manos de terceros desconocidos.
+
+\subsection{Chaos Agile}
+
+El Chaos Agile representa la paradoja moderna de la crisis del software. Las metodologías ágiles nacieron para resolver los viejos problemas de estimaciones y gestión, pero si se implementan mal, se convierten en un desarrollo caótico.
+
+Esto ocurre porque los equipos distorsionan los principios originales. Al priorizar el software funcionando sobre la documentación, se elimina el diseño arquitectónico. Esta falta de estructura deriva en una deuda técnica impagable y en lo que se conoce como una gran bola de lodo, que en la práctica es un código monolítico, desestructurado e inmantenible.
+
+De igual forma, al llevar al extremo la idea de responder al cambio sobre seguir un plan, los desarrolladores caen en la improvisación constante, sacrificando la visión a largo plazo por entregas inmediatas pero frágiles.
+
+El Chaos Agile no resuelve la crisis del software porque sustituye la antigua parálisis por análisis de los modelos tradicionales por una velocidad insostenible, donde la falta de documentación y arquitectura convierte cada nuevo requerimiento en un riesgo sistémico.
+
+\end{document}
