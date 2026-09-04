@@ -10,6 +10,8 @@
 \usepackage{minted}
 \usepackage{listings}
 \usepackage{pdfpages}
+\usepackage{graphicx}
+\usepackage{url}
 
 \setminted{
   fontsize=\small,
@@ -46,159 +48,17 @@
 \fairemarges
 \fairepagedegarde
 
-\section{Contexto y Justificación del Proyecto}
+\section{Situación Actual}
 
-La concepción tradicional de la relación entre la universidad pública y sus graduados se ha fundamentado históricamente en un vínculo terminal: una vez otorgado el título académico, la interacción institucional cesa casi por completo, limitándose a trámites burocráticos esporádicos. En los ecosistemas contemporáneos de educación superior, este paradigma ha sido superado por un modelo de vinculación longitudinal continua, en el cual el graduado actúa como agente activo de transferencia de conocimiento, retroalimentación curricular, inserción laboral y posicionamiento institucional.
+La relación tradicional entre la universidad pública y sus graduados ha sido un vínculo terminal que cesa tras la titulación. En la Universidad Mayor de San Simón, el contacto se limita a trámites administrativos, careciendo de mecanismos para el seguimiento continuo de la trayectoria laboral. Esto genera un vacío crítico en indicadores de pertinencia curricular e inserción laboral, los cuales son indispensables para la acreditación universitaria.
 
-En la Universidad Mayor de San Simón, la culminación del plan de estudios y la obtención del título profesional marcan con frecuencia una ruptura estructural en la relación entre la institución y sus graduados. En el modelo operativo vigente, el contacto se limita a gestiones administrativas aisladas de certificación o trámites de titulación, careciendo de mecanismos institucionalizados para el seguimiento continuo de la trayectoria laboral y académica de los profesionales formados en sus aulas.
+La infraestructura tecnológica, sostenida por la Unidad de Provisión de Sistemas de Información mediante el sistema webSISS, pierde el rastro del estudiante tras su graduación. El expediente pasa al Departamento de Registros e Inscripciones y al sistema SITRA para trámites notariales, sin integración con plataformas de fidelización. La Dirección Universitaria de Evaluación y Acreditación depende de iniciativas manuales facultativas, lo que deriva en vacíos analíticos.
 
-Esta desarticulación genera un vacío crítico en la recopilación de indicadores de pertinencia curricular, inserción laboral y movilidad profesional, métricas que resultan indispensables para responder a las crecientes exigencias de evaluación y acreditación universitaria en instancias como el ARCU-SUR. Asimismo, la dispersión de este capital humano priva a la comunidad universitaria de redes de apoyo profesional, bolsas de trabajo articuladas y programas de mentoría que faciliten la inserción laboral de las nuevas generaciones.
+Esfuerzos aislados en facultades como Ciencias Económicas, Ciencias y Tecnología, y Arquitectura y Ciencias del Hábitat utilizan formularios estáticos o bases de datos desconectadas, impidiendo un seguimiento histórico. Además, se detecta obsolescencia en formatos digitales y ausencia de datos sobre empleabilidad, salarios, motivaciones de ingreso y brecha de género, elementos exigidos en la Dimensión 3 de la acreditación.
 
-Esta problemática adquiere especial relevancia dentro de la Dimensión 3, correspondiente a la Comunidad Universitaria, donde se contempla el seguimiento de egresados y su relación con el entorno profesional. La ausencia de información sistematizada dificulta conocer de manera continua la situación laboral de los profesionales, sus áreas de desempeño, niveles de empleabilidad y la relación existente entre la formación recibida y las exigencias del mercado. Del mismo modo, limita la posibilidad de establecer mecanismos permanentes de retroalimentación que permitan identificar necesidades de actualización, oportunidades de mejora curricular y nuevas formas de vinculación entre la universidad, sus egresados y las empresas del medio.
+\section{Alternativas}
 
-La transformación de este vínculo requiere, un mecanismo que permita mantener actualizada la información profesional de los egresados, facilitar su conexión con oportunidades laborales, de mentoría, y generar información que pueda ser aprovechada por la propia carrera para evaluar su pertinencia y evolución. De esta manera, la vinculación Alumni se plantea como un proceso bidireccional: la universidad mantiene una relación activa con sus profesionales y, a su vez, obtiene información del entorno laboral que puede contribuir a su gestión académica y a los procesos de evaluación institucional.
-
-Frente a este escenario de desconexión, surge la necesidad imperativa de transformar la gestión del egresado: no como un trámite de archivo, sino como una política integral de vinculación y desarrollo continuo. Es en este contexto donde un \textbf{Sistema de Gestión Alumni} (\textit{Alumni Management System}) se plantea no como una simple base de datos de contactos, sino una infraestructura socio-tecnológica integrada que estructura, dinamiza y capitaliza el valor social e intelectual acumulado por la institución a lo largo de su trayectoria formativa.
-
-\newpage
-\section{Diagnóstico del Estado Actual de Seguimiento a Graduados en la UMSS}
-
-La Universidad Mayor de San Simón presenta una estructura técnica y administrativa descentralizada donde la gestión de información sobre sus egresados se encuentra dispersa entre dependencias centrales y facultativas, lo que interrumpe la continuidad del contacto con el profesional tras la conclusión del pregrado.
-
-\subsection{Fragmentación Operativa Central}
-
-La infraestructura tecnológica de la UMSS está sostenida por la Unidad de Provisión de Sistemas de Información (UPSI), responsable del Sistema de Información San Simón (webSISS). El webSISS concentra con solvencia los registros de la vida académica del estudiante regular: inscripciones, notas, planes de estudio y kárdex docente-estudiantil. Sin embargo, una vez que el estudiante concluye el plan de estudios y aprueba su modalidad de graduación (Tesis, Proyecto de Grado, Trabajo Dirigido o Examen de Grado), la interacción con el sistema webSISS prácticamente cesa.
-
-El expediente se transfiere al Departamento de Registros e Inscripciones (DREI) y a la Sección Archivos y Trámites para la emisión formal del Certificado de Conclusión de Estudios, el Diploma Académico y el Título Profesional en Provisión Nacional. Paralelamente, el seguimiento de la tramitación física se efectúa mediante el sistema SITRA. Este flujo operativo responde a un esquema predominantemente administrativo y notarial, enfocado en la verificación de solvencias universitarias, timbres, legalización de certificados y aranceles de caja facultativa y central. No existe integración programática entre el sistema de trámites y una plataforma relacional de fidelización que registre el destino ocupacional y los canales de comunicación del nuevo profesional.
-
-Por su parte, la Dirección Universitaria de Evaluación y Acreditación (DUEA) orienta a las comisiones de autoevaluación facultativas durante los procesos ante el CEUB o ARCU-SUR. Sin embargo, la DUEA usualmente constata que el levantamiento de datos sobre el desempeño de los graduados depende de iniciativas aisladas emprendidas manualmente por las carreras bajo presión temporal, derivando en vacíos analíticos que afectan los diagnósticos de pertinencia académica.
-
-\subsection{Esfuerzos Facultativos Aislados}
-
-Diversas unidades académicas han implementado mecanismos locales que evidencian la urgente necesidad de interacción con sus egresados, pero cuya sostenibilidad técnica es precaria:
-
-\begin{itemize}
-    \item \textbf{Facultad de Ciencias Económicas:} cuenta con entornos locales (SACAD) y módulos informativos en su portal institucional. No obstante, el instrumento predominante para recabar datos de graduados consiste en el llenado obligatorio de formularios en línea (Google Forms) como requisito previo para registrarse en las ceremonias de Colación Oficial de Grado. Este método genera únicamente un registro transversal estático correspondiente al momento exacto de la titulación; los correos y teléfonos consignados quedan desactualizados en el corto plazo sin que exista un mecanismo de actualización posterior.
-    \item \textbf{Facultad de Ciencias y Tecnología:} administra su ecosistema mediante el sistema SAGAA. Pese a contar con carreras del área informática y de sistemas con alta capacidad de desarrollo tecnológico, la facultad no dispone de un repositorio centralizado de graduados, por lo que cada carrera estructura sus bases de datos en función de sus calendarios particulares de acreditación.
-    \item \textbf{Facultad de Arquitectura y Ciencias del Hábitat:} aprobó e implementó en la gestión 2021 un Programa de Seguimiento a Graduados articulado a su Plan de Desarrollo Institucional. Aunque logró recopilar información diagnóstica valiosa, la falta de una plataforma automatizada vinculada a las bases de datos centrales de la universidad restringe la aplicación de encuestas periódicas y el seguimiento continuo de cohortes históricas.
-\end{itemize}
-
-La desarticulación técnica entre las facultades, la UPSI y la DUEA obstaculiza la consolidación de un sistema institucional único, impidiendo el intercambio bidireccional de datos entre las instancias de acreditación y los registros centrales de titulación. Este diagnóstico confirma, con evidencia local concreta, la necesidad del Sistema de Gestión Alumni planteada en la sección anterior.
-
-\newpage
-\section{Problemas, Causas y soluciones}
-
-A continuación, se detalla en una tabla los problemas identificados en la actualidad de los graduados y egresados, sus causas o impactor reales, y las soluciones funcionales que aborda el sistema:
-
-\begin{table}[htbp]
-  \centering
-  \small
-  \renewcommand{\arraystretch}{1.35}
-  \begin{tabular}{>{\raggedright\arraybackslash}p{0.30\textwidth} >{\raggedright\arraybackslash}p{0.32\textwidth} >{\raggedright\arraybackslash}p{0.32\textwidth}}
-    \toprule
-    \textbf{Problema} & \textbf{Causa / Impacto Real} & \textbf{Solución} \\
-    \midrule
-    Pérdida total del rastro de los profesionales tras la titulación; directorios estáticos, aislados y desactualizados. 
-    & Imposibilidad de contactar a graduados; bases de datos en hojas de cálculo que caducan en meses. 
-    & Autenticación y actualización por el propio graduado y sincronización con redes profesionales externas. \\
-    \addlinespace
-    Dificultad severa para levantar métricas de empleabilidad e impacto para el CEUB o agencias internacionales (ARCU-SUR). 
-    & Encuestas manuales con baja tasa de respuesta; riesgo en auditorías de calidad y retraso en acreditaciones. 
-    & Reportes en tiempo real de absorción laboral, salarios medios, áreas de desempeño y pertinencia curricular. \\
-    \addlinespace
-    Falta de un canal formal e institucionalizado de intermediación laboral entre la universidad y el sector productivo. 
-    & Los egresados dependen de redes informales o plataformas de terceros; las empresas no tienen un canal directo para captar talento UMSS. 
-    & Canales formales de áreas de especialidad y gestión centralizada de postulaciones y pasantías. \\
-    \addlinespace
-    Aislamiento de los estudiantes de últimos semestres frente a la realidad y exigencias de la industria. 
-    & Inseguridad vocacional, desconocimiento de dinámicas de contratación y demoras prolongadas en la inserción laboral. 
-    & Emparejamiento con egresados consolidados, definición de metas, límites de carga por mentor y métricas de avance. \\
-    \addlinespace
-    Desconexión entre la oferta de posgrado/capacitación y los intereses reales de los graduados. 
-    & Baja retención de egresados en programas de posgrado propios de la UMSS; pérdida del sentido de pertenencia institucional. 
-    & Convocatorias a eventos técnicos, reuniones de cohorte, aranceles preferenciales de posgrado y acceso permanente a repositorios/bibliotecas. \\
-    \bottomrule
-  \end{tabular}
-  \caption{Matriz de alineación problemática--solución del Sistema de Gestión Alumni.}
-  \label{tab:problemas_soluciones}
-\end{table}
-
-\section{Análisis de Mercado y Sistemas Similares (Benchmarking)}
-\subsection{Análisis de plataformas Alumni existentes}
- 
-Dentro del análisis de plataformas alumni existentes, se toma como referente el Programa Alumni de la Universidad Complutense de Madrid (UCM), uno de 
-los sistemas más completos y formalizados en el ámbito universitario, al contar con un reglamento propio que regula de manera explícita la elegibilidad, 
-los niveles de membresía y el funcionamiento general del programa. A continuación se detallan los criterios de elegibilidad que definen quiénes pueden formar parte de esta comunidad de egresados.
-\subsubsection{Elegibilidad: ¿Quién puede ser Alumni UCM?}
-Uno de los aspectos más destacables del programa es la amplitud de sus criterios de elegibilidad, que van más allá del simple requisito de graduación. Según el Artículo 6, pueden adquirir la condición de Alumni UCM:
- 
-\begin{itemize}
-    \item Los antiguos estudiantes que hayan obtenido un título oficial en la UCM.
-    \item Quienes hayan obtenido un título propio de máster, diploma de especialización o experto.
-    \item Estudiantes de otras universidades que hayan cursado parte de sus estudios en la UCM a través de programas de movilidad (Erasmus, Sicue-Séneca, programas con universidades norteamericanas, entre otros determinados por el Comité de Dirección).
-    \item Estudiantes visitantes que hayan superado al menos 30 créditos de asignaturas de planes oficiales de grado o máster en los que estuvieron matriculados.
-    \item Egresados de la Universidad de Mayores de la UCM.
-\end{itemize}
- 
-Esta política demuestra un enfoque inclusivo, que reconoce distintas formas de vinculación académica con la institución, no solo la culminación formal de una carrera completa.
- 
-\subsubsection{Estructura de Membresía}
-El programa no opera bajo un esquema plano de membresía única, sino que establece una jerarquía de categorías, cada una con criterios de acceso y niveles de reconocimiento distintos:
- 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{p{3.5cm}p{9.5cm}}
-        \toprule
-        \textbf{Categoría} & \textbf{Descripción} \\
-        \midrule
-        Alumni UCM & Categoría base, accesible a todos los perfiles descritos en la sección de elegibilidad. \\
-        Alumni UCM Plus+ & Reservada para quienes obtuvieron un título oficial en la UCM; otorga beneficios adicionales. \\
-        Alumni UCM Mentor & Egresados con experiencia profesional relevante que, de forma voluntaria, asesoran a otros egresados en su inserción laboral o desarrollo profesional. Son designados por las facultades. \\
-        Alumni UCM Honorífico & Personas físicas o jurídicas destacadas por su apoyo a la universidad, designadas por el Comité de Dirección. \\
-        Alumni UCM Ilustre & Egresados de prestigio reconocido en su ámbito profesional o de conocimiento. \\
-        Alumni UCM de Honor & Personalidades de máxima relevancia social formadas en la Complutense. \\
-        \bottomrule
-    \end{tabular}
-    \caption{Categorías de membresía del programa Alumni UCM.}
-    \label{tab:categorias-alumni-ucm}
-\end{table}
- 
-Tanto la condición de Alumni UCM como la de Alumni UCM Plus+ se adquieren mediante un proceso formal de inscripción.
- 
-\subsubsection{Derechos de los Miembros}
-Los derechos varían según la categoría de membresía:
- 
-\textbf{Alumni UCM (nivel base):}
-\begin{itemize}
-    \item Recibir información sobre las actividades organizadas por el programa.
-    \item Acceder a la red social Alumni UCM.
-    \item Participar en clubes y capítulos.
-    \item Realizar sugerencias no vinculantes sobre el funcionamiento del programa.
-    \item Darse de baja del programa en cualquier momento.
-\end{itemize}
- 
-\textbf{Alumni UCM Plus+ (adicional a lo anterior):}
-\begin{itemize}
-    \item Acceso a las actividades organizadas en el marco del programa.
-    \item Disfrute de ventajas y beneficios derivados de acuerdos con otras entidades.
-    \item Acceso a servicios e instalaciones de la universidad.
-    \item Participación en el programa de Mentoría Alumni UCM.
-    \item Identidad UCM: correo electrónico institucional y tarjeta universitaria inteligente (TUI).
-    \item Acceso y préstamo en la biblioteca universitaria, incluyendo recursos electrónicos.
-    \item Descuentos en formación permanente y descuentos comerciales acordados.
-\end{itemize}
- 
-Las categorías de Mentor, Honorífico, Ilustre y de Honor heredan los derechos de las dos categorías anteriores.
- 
-
-\subsection{Benchmark internacional}
-
-\begin{itemize}
-    \item \textbf{Handshake (Estados Unidos, 2014)}: plataforma de reclutamiento universitario donde empleadores publican vacantes de prácticas y primer empleo dirigidas específicamente a estudiantes y recién egresados; reporta trabajar con más de 1.300 universidades y cientos de miles de empresas registradas.
-    \item \textbf{Rikunabi y Mynavi (Japón)}: portales que sostienen el shūkatsu, el proceso nacional y simultáneo de búsqueda de empleo universitario. Rikunabi ofrece 'Open ES', una ficha de postulación estandarizada que el estudiante llena una sola vez y reutiliza para postular a miles de empresas; Mynavi conecta a los estudiantes con miles de empresas en reclutamiento activo y organiza ferias de empleo presenciales y virtuales.
-    \item \textbf{SIISEEE (Universidad de Guadalajara, México)}: propuesta académica de un Sistema Integrado de Información para el Seguimiento de Estudiantes, Egresados y Empleadores, que busca articular en una sola plataforma institucional los distintos instrumentos y bases de datos que la universidad ya usa por separado, permitiendo obtener información rutinaria y estratégica para la toma de decisiones.
-    \item \textbf{JISSEN ALMUNAE (Custamedia, Japón)}: plataforma desarrollada como parte de un programa del Ministerio de Educación de Japón (MEXT) para apoyar la formación de carrera y el empleo desde el primer año, conectando en un mismo espacio a estudiantes en curso y egresados, con perfiles diferenciados por tipo de usuario y autenticación por cuenta de correo/ID.
-\end{itemize}
+Existen plataformas internacionales que abordan la vinculación laboral con distintos enfoques. Handshake en Estados Unidos conecta estudiantes y empleadores mediante emparejamiento por habilidades. Rikunabi y Mynavi en Japón sostienen el proceso nacional de búsqueda de empleo conocido como shūkatsu mediante fichas de postulación estandarizadas. El sistema SIISEEE en México articula bases de datos dispersas para la toma de decisiones institucionales. JISSEN ALMUNAE en Japón une a estudiantes y egresados desde el primer año con control de acceso segmentado.
 
 \begin{table}[htbp]
   \centering
@@ -211,48 +71,25 @@ Las categorías de Mentor, Honorífico, Ilustre y de Honor heredan los derechos 
                   >{\raggedright\arraybackslash}p{0.21\textwidth}
                   >{\raggedright\arraybackslash}p{0.21\textwidth}}
     \toprule
-    \textbf{Aspecto} & \textbf{Handshake (EEUU)} & \textbf{Rikunabi / Mynavi (Japón)} & \textbf{SIISEEE (México)} & \textbf{JISSEN ALMUNAE (Japón)} \\
+    \textbf{Aspecto} & \textbf{Handshake en Estados Unidos} & \textbf{Rikunabi y Mynavi en Japón} & \textbf{SIISEEE en México} & \textbf{JISSEN ALMUNAE en Japón} \\
     \midrule
     Enfoque principal
     & Conectar estudiantes y recién egresados con empleadores para prácticas y primer empleo
-    & Sostener el proceso nacional y simultáneo de postulación (shūkatsu) entre universidades y empresas
+    & Sostener el proceso nacional y simultáneo de postulación entre universidades y empresas
     & Integrar información dispersa de estudiantes, egresados y empleadores para decisiones institucionales
     & Vincular a estudiantes en curso con egresados para formación de carrera y apoyo al empleo \\
     \addlinespace
-
-    Alcance reportado
-    & Cerca de 1.300+ universidades y más de 500.000--750.000 empresas registradas
-    & Miles de empresas activas por portal (Rikunabi $\sim$5.000 vía Open ES; Mynavi 7.000+)
-    & Caso único documentado (UdeG); no es un producto replicado en otras instituciones
-    & Implementado en al menos una universidad japonesa dentro de un programa nacional (MEXT) \\
-    \addlinespace
-
     Mecanismo diferenciador
-    & Curaduría y matching por habilidades, cursos y organizaciones estudiantiles
-    & Ficha de postulación estandarizada reutilizable (Open ES) y ferias virtuales masivas
-    & Articulación de sistemas/bases de datos ya existentes en la universidad, sin duplicarlos
-    & Perfiles por tipo de usuario con control de acceso y autenticación por correo/ID \\
+    & Curaduría y emparejamiento por habilidades y organizaciones estudiantiles
+    & Ficha de postulación estandarizada reutilizable y ferias virtuales masivas
+    & Articulación de sistemas y bases de datos ya existentes en la universidad
+    & Perfiles por tipo de usuario con control de acceso y autenticación por correo o identificación \\
     \addlinespace
-
-    Modelo de ingreso
-    & Suscripción pagada por universidades/empleadores (freemium para publicar vacantes)
-    & Comisión y paquetes pagados por las empresas que publican y organizan sesiones informativas
-    & No aplica --- es una propuesta interna, no un producto comercial
-    & Desarrollo a medida por encargo institucional, no SaaS de suscripción abierta \\
-    \addlinespace
-
-    Causa (problema)
-    & Sin canal centralizado, estudiantes y egresados dependen de contactos informales o portales genéricos poco filtrados por perfil universitario
-    & El proceso de búsqueda de empleo (shūkatsu) es masivo y simultáneo a nivel nacional, generando redundancia si cada estudiante llena formularios distintos por empresa
-    & Los datos de estudiantes, egresados y empleadores están dispersos entre áreas de la universidad y se usan solo de forma reactiva, no rutinaria
-    & Los egresados se desconectan de la universidad al titularse, y los estudiantes en curso no acceden a su red o experiencia \\
-    \addlinespace
-
     Solución
-    & Plataforma dedicada exclusivamente a estudiantes/egresados, con matching por habilidades y conexión directa con empleadores verificados
-    & Centraliza miles de ofertas y ferias de empleo en un portal único, con postulación estandarizada y reutilizable
-    & Articula los instrumentos y bases de datos existentes en un solo sistema, habilitando reportes rutinarios y estratégicos continuos
-    & Une en una misma plataforma a estudiantes y egresados desde el primer año, con acceso segmentado por rol para proteger datos sensibles \\
+    & Plataforma dedicada con emparejamiento por habilidades y conexión directa con empleadores verificados
+    & Centralización de ofertas y ferias de empleo en un portal único con postulación reutilizable
+    & Articulación de instrumentos existentes en un solo sistema para reportes rutinarios y estratégicos
+    & Unión de estudiantes y egresados desde el primer año con acceso segmentado por rol \\
     \bottomrule
   \end{tabular}%
   }
@@ -260,29 +97,139 @@ Las categorías de Mentor, Honorífico, Ilustre y de Honor heredan los derechos 
   \label{tab:benchmark_internacional}
 \end{table}
 
+\section{Perspectiva del Usuario}
+
+Los problemas principales incluyen la pérdida del rastro de los profesionales, la dificultad para levantar métricas de empleabilidad, la falta de intermediación laboral formal, el aislamiento de los estudiantes frente a la industria y la desconexión con la oferta de posgrado. Las causas radican en directorios estáticos, encuestas manuales con baja respuesta y dependencia de redes informales. Las soluciones propuestas abarcan la autenticación y actualización por el propio graduado, reportes en tiempo real, gestión centralizada de postulaciones, emparejamiento con mentores y acceso permanente a recursos universitarios.
+
+\begin{table}[htbp]
+  \centering
+  \small
+  \renewcommand{\arraystretch}{1.35}
+  \begin{tabular}{>{\raggedright\arraybackslash}p{0.30\textwidth} >{\raggedright\arraybackslash}p{0.32\textwidth} >{\raggedright\arraybackslash}p{0.32\textwidth}}
+    \toprule
+    \textbf{Problema} & \textbf{Causa o Impacto Real} & \textbf{Solución} \\
+    \midrule
+    Pérdida total del rastro de los profesionales tras la titulación. 
+    & Imposibilidad de contactar a graduados y bases de datos en hojas de cálculo que caducan en meses. 
+    & Autenticación y actualización por el propio graduado y sincronización con redes profesionales externas. \\
+    \addlinespace
+    Dificultad severa para levantar métricas de empleabilidad e impacto para el CEUB o agencias internacionales como ARCU-SUR. 
+    & Encuestas manuales con baja tasa de respuesta y riesgo en auditorías de calidad. 
+    & Reportes en tiempo real de absorción laboral, salarios medios, áreas de desempeño y pertinencia curricular. \\
+    \addlinespace
+    Falta de un canal formal e institucionalizado de intermediación laboral entre la universidad y el sector productivo. 
+    & Dependencia de redes informales y ausencia de un canal directo para que las empresas capten talento universitario. 
+    & Canales formales de áreas de especialidad y gestión centralizada de postulaciones y pasantías. \\
+    \addlinespace
+    Aislamiento de los estudiantes de últimos semestres frente a la realidad y exigencias de la industria. 
+    & Inseguridad vocacional y demoras prolongadas en la inserción laboral. 
+    & Emparejamiento con egresados consolidados, definición de metas y métricas de avance. \\
+    \addlinespace
+    Desconexión entre la oferta de posgrado o capacitación y los intereses reales de los graduados. 
+    & Baja retención de egresados en programas de posgrado propios y pérdida del sentido de pertenencia institucional. 
+    & Convocatorias a eventos técnicos, reuniones de cohorte, aranceles preferenciales y acceso permanente a repositorios. \\
+    \bottomrule
+  \end{tabular}
+  \caption{Matriz de alineación problemática y solución del Sistema de Gestión Alumni.}
+  \label{tab:problemas_soluciones}
+\end{table}
+
+\section{Situación Actual del Seguimiento a la Comunidad Universitaria}
+
+La Dimensión 3 es la única de las cuatro dimensiones de acreditación sin información organizada. No existe seguimiento de egresados, no se conoce la razón de la desvincación de los docentes y no hay contacto regular con las empresas. A continuación se detalla el estado del arte y las propuestas para los actores clave de esta dimensión.
+
+\subsection{Egresados titulados}
+En otras universidades se implementan mecanismos robustos de verificación. La Universidad Carlos III de Madrid utiliza dos sistemas separados, uno para mantener el contacto y otro que mide el empleo cruzando la lista de egresados contra el registro estatal de empleo formal, funcionando como una verificación y no como una encuesta. La Universidad de Oxford está obligada por ley a mantener actualizado el contacto de cada egresado para que un organismo independiente lo busque quince meses después de graduarse. La Universidad Autónoma de Madrid utiliza un sistema que completa automáticamente los datos del egresado, aunque la participación se mantiene baja con solo 1200 inscritos de un total de 170000 personas tituladas.
+
+Para la Universidad Mayor de San Simón se propone comenzar cruzando el registro de titulación con el kárdex de notas y la ficha de inscripción, sin esperar a tener acceso a una base de datos externa. El sistema debe completar los datos del egresado de forma automática. Se debe asumir desde el diseño que pocas personas participarán al principio, resolviéndolo con incentivos reales y no solo con buena tecnología.
+
+\subsection{Egresados no titulados}
+No existen encuestas específicas para este caso en las universidades consultadas, existiendo únicamente plantillas públicas de encuesta de salida universitaria pensadas para cualquier estudiante que deja la institución. 
+
+Se propone utilizar dicha plantilla agregando una pregunta directa sobre la razón por la cual no se cerró el trámite de titulación, formulada para entender la causa sin presionar a la persona. Además, se propone abrir un expediente por cada caso con etapas simples que van desde materias completas, pasando por el contacto con la persona y el registro del motivo, hasta la toma de una decisión sobre retomar el trámite.
+
+\subsection{Empresas y empleadores}
+En Australia existe una encuesta en dos pasos aplicada anualmente desde el año 2016. Primero se encuesta al egresado que ya tiene trabajo solicitando el contacto de su jefe directo, y posteriormente se encuesta a ese jefe preguntando sobre la preparación del egresado en habilidades técnicas y laborales.
+
+Se propone copiar esta idea central, utilizando al egresado como puente para llegar al empleador real. Se deben utilizar también redes sociales y grupos de egresados como canal de contacto, además del correo institucional. Como mejora, se propone volver a encuestar al mismo empleador cada dos años si el egresado sigue trabajando ahí, para observar cambios en su opinión con el tiempo.
+
+\subsection{Docentes}
+Un consorcio de universidades diseñó una encuesta única aplicada a dos grupos que luego se comparan, enfocándose en docentes que recibieron una oferta de otra institución y se fueron, y aquellos que recibieron una oferta y decidieron quedarse. La clave es preguntar en el momento en que la persona decide irse, antes de perder el contacto.
+
+Se propone implementar una encuesta corta y confidencial que se envíe automáticamente apenas alguien presenta su renuncia. Como mejora, se debe comparar también con docentes que nunca recibieron ninguna oferta externa, para distinguir entre quienes se fueron por una mejor oferta y quienes lo hicieron por otros motivos como jubilación o insatisfacción. Esta información debe guardarse en el mismo sistema de expedientes por etapas.
+
+\subsection{Estudiantes en curso, postulantes y autoridades}
+No se encontraron casos documentados para estos tres actores en las universidades consultadas. 
+
+Para los postulantes se propone abrir un expediente por cada persona con etapas que registren la primera postulación, el resultado y las posteriores postulaciones, permitiendo responder cuántas veces alguien tuvo que intentar entrar y por qué. Para los estudiantes en curso no se necesita un mecanismo nuevo, ya que se les puede encuestar directamente, asegurando que el nuevo sistema consulte los datos que ya existen en el sistema de inscripción de materias. Para las autoridades y consejos, una encuesta directa anual es suficiente.
+
+\subsection{Verificación de datos e incentivos}
+En ningún caso real es la propia universidad la que confirma si sus datos de empleo son correctos, siempre intervienen terceros como la Seguridad Social en España, organismos independientes en Inglaterra o centros de investigación contratados por el gobierno en Australia. 
+
+Se propone que el organismo acreditador del Mercosur cumpla parte de ese rol, construyendo el sistema pensando en ese requisito externo. A futuro, se puede plantear que una entidad boliviana externa a la universidad reciba y verifique estos datos de forma independiente.
+
+Para lograr que la encuesta sea una obligación y no una opción, se propone vincularla a un trámite que la persona necesita, como el proceso para recoger el título en físico o pedir certificados. Se debe exigir el dato de contacto actualizado como requisito de egreso y utilizar los beneficios del sistema como incentivo, como condición para seguir usando la bolsa de trabajo o las mentorías.
+
+\section{Situación Legal}
+
+El proceso de acreditación ante el organismo ARCU-SUR, perteneciente al ámbito del Mercosur, establece el marco legal e institucional que exige la demostración de cuatro dimensiones. A diferencia de acreditaciones anteriores realizadas ante el CEUB, este nuevo proceso requiere evidencias documentales y del trabajo real para validar la carrera ante la sociedad. 
+
+La Dimensión 3, correspondiente a la Comunidad Universitaria, es la más débil y la única para la que prácticamente no existe información sistematizada. La normativa exige demostrar que quien estudia informática recibe efectivamente el perfil prometido, que el título sirve para ejercer la profesión, que los docentes son idóneos y que los programas cumplen con los estándares. El incumplimiento de estos parámetros puede resultar en el rechazo de la acreditación, lo que obliga a la universidad a establecer mecanismos legales y formales de seguimiento y registro para validar su oferta académica.
+
+\section{Detalles de los Sistemas Alumni para Solucionar el Problema}
+
+El Programa Alumni de la Universidad Complutense de Madrid sirve como referente. Establece criterios de elegibilidad inclusivos que abarcan desde titulados oficiales hasta estudiantes de movilidad. Define una estructura de membresía jerárquica con categorías base, Plus, Mentor, Honorífico, Ilustre y de Honor. Los derechos incluyen acceso a redes sociales, actividades, servicios universitarios, biblioteca y descuentos, escalando según la categoría alcanzada.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{p{3.5cm}p{9.5cm}}
+        \toprule
+        \textbf{Categoría} & \textbf{Descripción} \\
+        \midrule
+        Alumni UCM & Categoría base accesible a todos los perfiles descritos en la sección de elegibilidad. \\
+        Alumni UCM Plus+ & Reservada para quienes obtuvieron un título oficial y otorga beneficios adicionales. \\
+        Alumni UCM Mentor & Egresados con experiencia profesional relevante que asesoran a otros de forma voluntaria y son designados por las facultades. \\
+        Alumni UCM Honorífico & Personas físicas o jurídicas destacadas por su apoyo a la universidad, designadas por el Comité de Dirección. \\
+        Alumni UCM Ilustre & Egresados de prestigio reconocido en su ámbito profesional o de conocimiento. \\
+        Alumni UCM de Honor & Personalidades de máxima relevancia social formadas en la Complutense. \\
+        \bottomrule
+    \end{tabular}
+    \caption{Categorías de membresía del programa Alumni UCM.}
+    \label{tab:categorias-alumni-ucm}
+\end{table}
+
+Además del modelo de membresía, se proponen funciones útiles basadas en sistemas de referencia como el de la universidad chilena Alumni UC. Se debe priorizar la bolsa de trabajo y las mentorías, ya que cada una sirve para conectar a dos actores de la Dimensión 3 con una sola función. Se implementará un catálogo simple de beneficios propios, evitando descuentos comerciales poco realistas. Se utilizarán los certificados y trámites en línea como la razón práctica para que el egresado vuelva al sistema, en lugar de depender de una encuesta anual aislada.
+
+\subsection{Sistematización mediante CiviCRM}
+Varios de los casos citados en España utilizan el mismo programa de código abierto llamado CiviCRM, diseñado para asociaciones y organizaciones sin fines de lucro. No es una sola herramienta, sino un registro central de contactos al que se le pueden activar o desactivar módulos según lo que la organización necesite, como membresías con cuota, eventos con cobro, correo masivo, expedientes por etapas y reportes. Esto explica por qué algunas universidades cobran una cuota únicamente a quien decide afiliarse formalmente a la asociación.
+
 \section{Actores}
-En el sistema se contemplan tres actores principales que interactúan con la plataforma de acuerdo con sus necesidades y funciones dentro de 
-la comunidad de egresados. Estos actores permiten establecer la vinculación entre los egresados, la carrera y el mercado laboral.
 
- \subsection{Egresado}
- El egresado es la persona que ha concluido su formación académica y utiliza la plataforma para mantener y fortalecer su vínculo con 
- la universidad y el entorno profesional. Este actor puede gestionar su perfil profesional, registrar información relacionada con su 
- experiencia, estudios y certificaciones, consultar oportunidades laborales, participar en procesos de mentoría y responder encuestas 
- relacionadas con su situación profesional.
+El sistema contempla actores que interactúan con la plataforma de acuerdo con sus necesidades y funciones dentro de la comunidad de egresados, estableciendo la vinculación entre estos, la carrera y el mercado laboral.
 
- \subsection{Empresa / Reclutador}
- La empresa o reclutador es el actor externo que utiliza la plataforma para establecer contacto con profesionales egresados y acceder 
- a oportunidades de vinculación laboral. Este actor puede publicar ofertas de empleo y buscar perfiles de egresados de acuerdo con las 
- habilidades y áreas profesionales requeridas.
+\subsection{Egresado}
+El egresado es la persona que ha concluido su formación académica y utiliza la plataforma para mantener y fortalecer su vínculo con la universidad y el entorno profesional. Este actor gestiona su perfil profesional, registra información relacionada con su experiencia, consulta oportunidades laborales, participa en procesos de mentoría y responde encuestas sobre su situación profesional.
 
- \subsection{Administrador de la Carrera} 
- El administrador de la carrera es el actor encargado de gestionar y supervisar la información institucional relacionada con los 
- egresados. Puede acceder a información consolidada sobre la comunidad de egresados, gestionar encuestas y consultar indicadores 
- relacionados con la empleabilidad y trayectoria profesional.
+\subsection{Empresa o Reclutador}
+La empresa o reclutador es el actor externo que utiliza la plataforma para establecer contacto con profesionales egresados y acceder a oportunidades de vinculación laboral. Este actor publica ofertas de empleo y busca perfiles de egresados de acuerdo con las habilidades y áreas profesionales requeridas.
 
- \subsection{Actor opcional - Mentor}
- El mentor es un egresado con experiencia profesional que participa voluntariamente en actividades de orientación y acompañamiento 
- dirigidas a otros egresados. Este actor puede ofrecer espacios de mentoría y gestionar la disponibilidad de horarios para las sesiones 
- de orientación profesional.
+\subsection{Administrador de la Carrera}
+El administrador de la carrera es el actor encargado de gestionar y supervisar la información institucional relacionada con los egresados. Accede a información consolidada sobre la comunidad, gestiona encuestas y consulta indicadores relacionados con la empleabilidad y trayectoria profesional.
+
+\subsection{Mentor}
+El mentor es un egresado con experiencia profesional que participa voluntariamente en actividades de orientación y acompañamiento dirigidas a otros egresados. Este actor ofrece espacios de mentoría y gestiona la disponibilidad de horarios para las sesiones de orientación profesional.
+
+\section{Referencias}
+
+\begin{itemize}
+    \item \textbf{Universidad Carlos III de Madrid:} Ficha de carrera en Gradopedia con cita a registros de afiliación a la Seguridad Social (\url{https://gradopedia.es/grados/ciencia-e-ingenieria-de-datos/uc3m-madrid}), página oficial de empleabilidad (\url{https://www.uc3m.es/estudios/empleo-practicas}) e informe del Ministerio de Educación de España sobre inserción laboral.
+    \item \textbf{Universidad de Oxford y Agencia de Estadísticas de Educación Superior:} Servicio de Carreras de Oxford (\url{https://www.careers.ox.ac.uk/the-graduate-outcomes-survey}) y Office for Students, organismo regulador inglés (\url{https://www.officeforstudents.org.uk/for-providers/quality-and-standards/graduate-outcomes-survey/}).
+    \item \textbf{Universidad Autónoma de Madrid:} Artículo sobre el desarrollo de su plataforma AlumniUAM (\url{https://www.ixiam.com/es/blog/la-uam-confia-en-ixiam-el-desarrollo-de-su-plataforma-alumniuam/}).
+    \item \textbf{Plantilla de encuesta de salida universitaria:} QuestionPro (\url{https://www.questionpro.com/survey-templates/university-exit/}).
+    \item \textbf{Australia, encuesta de satisfacción del empleador:} Descripción oficial del mecanismo (\url{https://srcentre.com.au/project/employer-satisfaction-survey/}) e informe nacional 2021 (\url{https://www.qilt.edu.au/docs/default-source/default-document-library/2021-ess-national-report.pdf}).
+    \item \textbf{Consorcio universitario, encuesta de retención y salida de docentes:} Página oficial de la Universidad de Harvard (\url{https://coache.gse.harvard.edu/faculty-retention-and-exit-survey}).
+    \item \textbf{Sistema Alumni de referencia en Chile:} Beneficios y credencial virtual (\url{https://alumni.uc.cl/actualidad/vuelve-a-vivir-la-universidad-en-mi-portal-uc/}), bolsa de trabajo (\url{https://alumni.uc.cl/beneficio/mercado-laboral-uc/}), mentorías (\url{https://mentoriaslaborales.uc.cl/programa-de-mentorias}) y página principal (\url{https://alumni.uc.cl/}).
+    \item \textbf{CiviCRM:} Wikipedia, lista de módulos (\url{https://es.wikipedia.org/wiki/CiviCRM}).
+\end{itemize}
 
 \end{document}
