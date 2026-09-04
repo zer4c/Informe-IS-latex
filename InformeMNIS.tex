@@ -97,34 +97,67 @@ A continuación, se detalla en una tabla los problemas identificados en la actua
 \begin{itemize}
     \item \textbf{Handshake (Estados Unidos, 2014)}: plataforma de reclutamiento universitario donde empleadores publican vacantes de prácticas y primer empleo dirigidas específicamente a estudiantes y recién egresados; reporta trabajar con más de 1.300 universidades y cientos de miles de empresas registradas.
     \item \textbf{Rikunabi y Mynavi (Japón)}: portales que sostienen el shūkatsu, el proceso nacional y simultáneo de búsqueda de empleo universitario. Rikunabi ofrece 'Open ES', una ficha de postulación estandarizada que el estudiante llena una sola vez y reutiliza para postular a miles de empresas; Mynavi conecta a los estudiantes con miles de empresas en reclutamiento activo y organiza ferias de empleo presenciales y virtuales.
+    \item \textbf{SIISEEE (Universidad de Guadalajara, México)}: propuesta académica de un Sistema Integrado de Información para el Seguimiento de Estudiantes, Egresados y Empleadores, que busca articular en una sola plataforma institucional los distintos instrumentos y bases de datos que la universidad ya usa por separado, permitiendo obtener información rutinaria y estratégica para la toma de decisiones.
+    \item \textbf{JISSEN ALMUNAE (Custamedia, Japón)}: plataforma desarrollada como parte de un programa del Ministerio de Educación de Japón (MEXT) para apoyar la formación de carrera y el empleo desde el primer año, conectando en un mismo espacio a estudiantes en curso y egresados, con perfiles diferenciados por tipo de usuario y autenticación por cuenta de correo/ID.
 \end{itemize}
 
 \begin{table}[htbp]
   \centering
-  \small
+  \scriptsize
   \renewcommand{\arraystretch}{1.35}
-  \begin{tabular}{>{\raggedright\arraybackslash}p{0.30\textwidth} >{\raggedright\arraybackslash}p{0.32\textwidth} >{\raggedright\arraybackslash}p{0.32\textwidth}}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{>{\raggedright\arraybackslash}p{0.14\textwidth}
+                  >{\raggedright\arraybackslash}p{0.21\textwidth}
+                  >{\raggedright\arraybackslash}p{0.21\textwidth}
+                  >{\raggedright\arraybackslash}p{0.21\textwidth}
+                  >{\raggedright\arraybackslash}p{0.21\textwidth}}
     \toprule
-    \textbf{Aspecto} & \textbf{Handshake (EEUU)} & \textbf{Rikunabi / Mynavi (Japón)} \\
+    \textbf{Aspecto} & \textbf{Handshake (EEUU)} & \textbf{Rikunabi / Mynavi (Japón)} & \textbf{SIISEEE (México)} & \textbf{JISSEN ALMUNAE (Japón)} \\
     \midrule
     Enfoque principal
     & Conectar estudiantes y recién egresados con empleadores para prácticas y primer empleo
-    & Sostener el proceso nacional y simultáneo de postulación (shūkatsu) entre universidades y empresas \\
+    & Sostener el proceso nacional y simultáneo de postulación (shūkatsu) entre universidades y empresas
+    & Integrar información dispersa de estudiantes, egresados y empleadores para decisiones institucionales
+    & Vincular a estudiantes en curso con egresados para formación de carrera y apoyo al empleo \\
     \addlinespace
+
     Alcance reportado
     & Cerca de 1.300+ universidades y más de 500.000--750.000 empresas registradas
-    & Miles de empresas activas por portal (Rikunabi $\sim$5.000 vía Open ES; Mynavi 7.000+) \\
+    & Miles de empresas activas por portal (Rikunabi $\sim$5.000 vía Open ES; Mynavi 7.000+)
+    & Caso único documentado (UdeG); no es un producto replicado en otras instituciones
+    & Implementado en al menos una universidad japonesa dentro de un programa nacional (MEXT) \\
     \addlinespace
+
     Mecanismo diferenciador
     & Curaduría y matching por habilidades, cursos y organizaciones estudiantiles
-    & Ficha de postulación estandarizada reutilizable (Open ES) y ferias virtuales masivas \\
+    & Ficha de postulación estandarizada reutilizable (Open ES) y ferias virtuales masivas
+    & Articulación de sistemas/bases de datos ya existentes en la universidad, sin duplicarlos
+    & Perfiles por tipo de usuario con control de acceso y autenticación por correo/ID \\
     \addlinespace
+
     Modelo de ingreso
     & Suscripción pagada por universidades/empleadores (freemium para publicar vacantes)
-    & Comisión y paquetes pagados por las empresas que publican y organizan sesiones informativas \\
+    & Comisión y paquetes pagados por las empresas que publican y organizan sesiones informativas
+    & No aplica --- es una propuesta interna, no un producto comercial
+    & Desarrollo a medida por encargo institucional, no SaaS de suscripción abierta \\
+    \addlinespace
+
+    Causa (problema)
+    & Sin canal centralizado, estudiantes y egresados dependen de contactos informales o portales genéricos poco filtrados por perfil universitario
+    & El proceso de búsqueda de empleo (shūkatsu) es masivo y simultáneo a nivel nacional, generando redundancia si cada estudiante llena formularios distintos por empresa
+    & Los datos de estudiantes, egresados y empleadores están dispersos entre áreas de la universidad y se usan solo de forma reactiva, no rutinaria
+    & Los egresados se desconectan de la universidad al titularse, y los estudiantes en curso no acceden a su red o experiencia \\
+    \addlinespace
+
+    Solución
+    & Plataforma dedicada exclusivamente a estudiantes/egresados, con matching por habilidades y conexión directa con empleadores verificados
+    & Centraliza miles de ofertas y ferias de empleo en un portal único, con postulación estandarizada y reutilizable
+    & Articula los instrumentos y bases de datos existentes en un solo sistema, habilitando reportes rutinarios y estratégicos continuos
+    & Une en una misma plataforma a estudiantes y egresados desde el primer año, con acceso segmentado por rol para proteger datos sensibles \\
     \bottomrule
-  \end{tabular}
-  \caption{Comparativa de sistemas de vinculación laboral.}
+  \end{tabular}%
+  }
+  \caption{Comparativa de sistemas de vinculación laboral y trazabilidad de comunidad universitaria.}
   \label{tab:benchmark_internacional}
 \end{table}
 
